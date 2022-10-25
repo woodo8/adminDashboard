@@ -1,0 +1,42 @@
+.humoinside{
+    padding: 110px 10px;
+    height: 100vh;
+}
+.row-layout{
+    --bs-gutter-x:0 !important;
+}
+.humoinside .inside-item{
+    display: flex;
+    align-items: center;
+}
+.humoinside .inside-item .icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e6e8f6;
+    margin-right: 15px;
+}
+.title{
+    font-weight: 700;
+    font-size: 14px;
+}
+.mainDesc{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+.roww{
+    --bs-gutter-x:0 !important;
+}
+.cheque{
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}

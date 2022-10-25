@@ -1,0 +1,104 @@
+.statistics .apexcharts-xaxis-texts-g,
+.statistics .apexcharts-legend,
+.statistics .apexcharts-zoomin-icon,
+.statistics .apexcharts-zoomout-icon,
+.statistics .apexcharts-zoom-icon {
+    display: none !important;
+}
+
+.areachart .p-0 {
+
+    padding: 0 !important;
+
+}
+
+.apexcharts-canvas {
+    margin-right: -20px !important;
+    color: #5028ad;
+}
+
+.mainColor {
+    color: #3a0ca3;
+}
+
+.heart-box {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(196, 202, 208);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.statAmount {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.statNew {
+    font-weight: 14px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #3a0ca3;
+    padding: 2px 6px;
+    margin-left: 10px;
+}
+
+.line-info {
+    width: 100px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(58, 12, 163, 1) 68%);
+    position: relative;
+
+}
+.line-info::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3a0ca3;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.line-info::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(166, 166, 166);
+    right: -2.5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    animation: beat 2.5s linear infinite;
+}
+
+@keyframes beat {
+    0% {
+        width: 0;
+        height: 0;
+        right: 0;
+    }
+
+    50% {
+        width: 9px;
+        height: 9px;
+        right: 0;
+    }
+
+    100% {
+        width: 15px;
+        height: 15px;
+        right: -2.5px;
+    }
+}
+.statistics .css-19kzrtu{
+    padding: 0;
+}

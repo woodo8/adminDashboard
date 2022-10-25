@@ -1,0 +1,38 @@
+.humoTable {
+    width: 100%;
+    overflow-x: hidden;
+}
+.humoTable .status{
+    padding: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    border-radius: 3px;
+}
+.Confirmed{
+    background-color: rgb(26, 185, 29);
+}
+.Invalid{
+    background-color: orange;
+}
+.Checked{
+    background-color: rgb(77, 109, 205);
+}
+.Confirmedlight{
+    background-color: rgb(227, 255, 227);
+}
+.Invalidlight{
+    background-color: rgb(255, 247, 232);
+}
+.Checkedlight{
+    background-color: rgb(232, 237, 255);
+}
+.humoTable tr{
+    border-bottom: 2px solid rgb(124, 103, 220);
+}
+.humoTable tr td, tr th{
+    cursor: pointer;
+}

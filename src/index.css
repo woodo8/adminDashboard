@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+:root{
+  --mainColor: #1A6CC7;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Karla', sans-serif;
+}
+p{
+  margin-bottom: 0 !important;
+}
+.pointer{
+  cursor: pointer !important;
+}
+ul, ol{
+  margin: 0 !important;
+  padding-left: 0 !important;
+}
+.apexcharts-toolbar{
+  z-index: 2 !important;
+}
+.Mui-selected.MuiButtonBase-root.MuiPaginationItem-root{
+  background-color: var(--mainColor) !important;
+  color: white !important;
+}

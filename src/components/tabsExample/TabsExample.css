@@ -1,0 +1,31 @@
+.card {
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: 1px 1px 17px -7px #000000 !important;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0  !important;
+    border: none !important;
+    padding: 30px 40px !important;
+}
+
+.card .statTitle {
+    font-weight: 500;
+    margin-bottom: 20px !important;
+}
+
+.card .statTitle .statAmount {
+    font-weight: 700;
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+.Mui-selected {
+    color: var(--mainColor) !important;
+}
+/* .apexcharts-yaxis-texts-g{
+    display: none !important;
+} */

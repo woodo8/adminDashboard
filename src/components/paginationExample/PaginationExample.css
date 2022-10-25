@@ -1,0 +1,11 @@
+.pagination{
+    padding: 300px;
+    padding-left: 300px !important;
+}
+
+
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}

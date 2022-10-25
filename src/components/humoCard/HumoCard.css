@@ -1,0 +1,30 @@
+.humocard{
+    padding: 110px 0px;
+}
+.px-20{
+    padding:110px 20px;
+}
+.humocard .searchInputt{
+    height: 50px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 50px;
+    outline: none;
+}
+/* .humocard .col-md-2{
+    padding: 0 15px; 
+    box-sizing: border-box !important;
+} */
+.humocard .col-md-2  button{
+    padding: 12px 25px;
+    height: 50px;
+    color: white !important;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--mainColor) !important;
+}
+.humocard .MuiOutlinedInput-notchedOutline{
+    border: none !important;
+}

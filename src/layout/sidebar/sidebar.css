@@ -1,0 +1,139 @@
+.sidebar {
+    background-color: #2C323F;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 1px 0 17px -7px #000000;
+    transition: all 0.2s linear;
+    z-index: 5;
+}
+.l-100per{
+    left: -285px !important;
+}
+.sidebar *{
+    word-wrap: unset;
+}
+.w-285{
+    width: 285px;
+}
+.w-90{
+    width: 90px;
+    transition: all 0.0001s linear;
+}
+.sidebar .logo {
+    width: 140px;
+}
+.logo-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar .bg-main {
+    background-color: #2C323F;
+}
+
+.sidebar .accordion-button {
+    background-color: #2C323F !important;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.sidebar .accordion-button:focus {
+    color: white;
+}
+
+.sidebar .accordion-button:hover {
+    color: var(--mainColor) !important;
+}
+
+.sidebar .accordion-button::after {
+    display: none;
+
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.sidebar .sidebarHeader {
+    height: 80px;
+    box-shadow: 1px 1px 17px -7px #000000;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
+
+.sidebar .sidebarBody {
+    padding: 20px 20px;
+    background-color: #2C323F;
+    height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 200px !important;
+    scroll-behavior: smooth;
+}
+
+.sidebar .sidebarBody::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar .sidebarBody::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 243, 243);
+    outline: 1px solid slategrey;
+    border-radius: 10px;
+}
+.sidebar .arrowIcon{
+    font-size: 10px;
+}
+.sidebar .sidebarBody li{
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.sidebar .sidebarBody li:hover{
+    color: var(--mainColor) !important;
+}
+.sidebar .sidebarBody li span{
+    margin-right: 15px;
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 20px;
+}
+.sidebar .sidebarBody .instruction-box{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4b515e;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+.sidebar .sidebarBody .instruction-box .title{
+    color: var(--mainColor);
+    font-weight: 700;
+}
+.sidebar .sidebarBody .instruction-box .desc{
+    font-size: 14px;
+    font-weight: 600;
+}
+.sidebar .sidebarBody .body-item{
+    padding: 0 20px;
+    transition: all 0.2s linear;
+}
+.sidebar .sidebarBody .body-item:hover{
+    color: var(--mainColor);
+}
+.sidebar .sidebarBody .forLinks .accordion-button{
+    margin-bottom: 0 !important;
+}
+
+.sidebar .sidebarBody .forLinks .collapsed{
+    margin-bottom: 200px !important;
+}
+.sidebar .bodyNostretch {
+    padding-top: 30px;
+}
+.sidebar .bodyNostretch .nostrecthIcons{
+    margin: 20px 0;
+    cursor: pointer;
+}
