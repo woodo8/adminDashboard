@@ -69,10 +69,10 @@ export default function Sidebar() {
                             <Accordion.Body className='bg-main '>
                                 <ul>
                                     <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Card</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payment</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Transfer(p2p)</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>To card</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Terminal</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Payment</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Transfer(p2p)</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>To card</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Terminal</p></li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -86,11 +86,11 @@ export default function Sidebar() {
                             </Accordion.Header>
                             <Accordion.Body className='bg-main  '>
                                 <ul>
-                                    <li onClick={()=>navigate("/uzcard")} className='py-2 d-flex align-items-center text-white'><span>-</span><p>Card</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payment</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Transfer(p2p)</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>To card</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Terminal</p></li>
+                                    <li onClick={() => navigate("/uzcard")} className='py-2 d-flex align-items-center text-white' ><span>-</span><p>Card</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Payment</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Transfer(p2p)</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>To card</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Terminal</p></li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -104,8 +104,8 @@ export default function Sidebar() {
                             </Accordion.Header>
                             <Accordion.Body className='bg-main  '>
                                 <ul>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payment</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Terminal</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Payment</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Terminal</p></li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -119,7 +119,7 @@ export default function Sidebar() {
                             </Accordion.Header>
                             <Accordion.Body className='bg-main  '>
                                 <ul>
-                                    <li onClick={()=>navigate("/munis")} className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payments</p></li>
+                                    <li onClick={() => navigate("/munis")} className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payments</p></li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -133,7 +133,7 @@ export default function Sidebar() {
                             </Accordion.Header>
                             <Accordion.Body className='bg-main  '>
                                 <ul>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Payments</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white' onClick={() => navigate('/humo')}><span>-</span><p>Payments</p></li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -156,7 +156,7 @@ export default function Sidebar() {
                                 <ul>
                                     <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Unired</p></li>
                                     <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>FintechHub</p></li>
-                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>lorem</p></li>
+                                    <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>Unisoft</p></li>
                                     <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>lorem</p></li>
                                     <li className='py-2 d-flex align-items-center text-white'><span>-</span><p>lorem</p></li>
                                 </ul>

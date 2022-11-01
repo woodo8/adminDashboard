@@ -63,7 +63,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Navbar() {
     const [profileSub, setProfileSub] = useState(false)
-    const { navStretch ,setnavStretch} = useContext(StateContext)
+    const { navStretch, setnavStretch } = useContext(StateContext)
 
     const subCloser = () => {
         setTimeout(() => {
@@ -116,21 +116,22 @@ export default function Navbar() {
                     </Box> */}
                         <div className='d-flex align-items-center'>
 
-                            <div className={navStretch?"burger active":"burger"} >
-                                <div className='childBurger' onClick={()=>setnavStretch(!navStretch)}></div>
+                            <div className={navStretch ? "burger active" : "burger"} >
+                                <div className='childBurger' onClick={() => setnavStretch(!navStretch)}></div>
                             </div>
-                            <Search className='search-box d-flex align-items-center'>
-                                <SearchIconWrapper>
+                            <Search className='search-box d-flex align-items-center d-sm-none d-md-flex'>
+                                <SearchIconWrapper className='d-sm-none d-md-flex'>
                                     <SearchIcon />
                                 </SearchIconWrapper>
                                 <StyledInputBase
+                                    className='d-sm-none d-md-flex'
                                     placeholder="Search…"
                                     inputProps={{ 'aria-label': 'search' }}
                                 />
                             </Search>
                         </div>
                         <div className='d-flex align-items-center'>
-                            <Button sx={{ marginRight: "20px", height: "40px", width: "180px" }} aria-describedby={id} variant="contained" onClick={handleClick}>
+                            <Button className='d-sm-none d-md-flex' sx={{ marginRight: "20px", height: "40px", width: "180px" }} aria-describedby={id} variant="contained" onClick={handleClick}>
                                 <img src={USA} alt="...." className="flag" /><p className='lang mx-2'>English(US)</p>
                             </Button>
                             <Popover
@@ -151,9 +152,9 @@ export default function Navbar() {
                                 <Divider />
                             </Popover>
 
-                            <div onMouseLeave={subCloser} onMouseOver={() => setProfileSub(true)} className="profile-box d-flex align-items-center">
+                            <div onMouseLeave={subCloser} onClick={() => setProfileSub(true)} className="profile-box d-flex align-items-center">
                                 <img src={Avatar} alt="...." />
-                                <div>
+                                <div className='d-sm-none d-md-block'>
                                     <p className="admin-name">Emma walter</p>
                                     <span>Admin <KeyboardArrowDownIcon />  </span>
                                 </div>

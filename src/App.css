@@ -1,6 +1,7 @@
-.App{
+.App {
     background-color: #e6e8f6;
 }
+
 body::-webkit-scrollbar {
     width: 10px;
     background-color: #e6e8f6 !important;
@@ -11,33 +12,41 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
     border-radius: 10px;
 }
-.pointer{
+
+.pointer {
     cursor: pointer !important;
 }
-.ml-285{
+
+.ml-285 {
     margin-left: 285px;
     transition: all 0.2s linear;
+    padding: 0 20px;
 }
-.ml-90{
+
+.ml-90 {
     margin-left: 90px;
     transition: all 0.2s linear;
-
+    padding: 0 20px;
 }
-.l-285{
+
+.l-285 {
     left: 285px;
     transition: all 0.2s linear;
     padding: 0 20px;
 }
-.l-90{
+
+.l-90 {
     left: 90px;
     transition: all 0.2s linear;
-
-}
-.navbar.l-285{
     padding: 0 20px;
 }
-.scrollToTop{
-    position: fixed ;
+
+.navbar.l-285 {
+    padding: 0 20px;
+}
+
+.scrollToTop {
+    position: fixed;
     bottom: 50px;
     right: 30px;
     z-index: 10;
@@ -49,13 +58,50 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     background-color: white;
 }
-.bold{
+
+.bold {
     font-weight: 700;
 }
-.bolder{
+
+.bolder {
     font-weight: 900;
 }
-.boxshadow{
+
+.boxshadow {
     border-radius: 15px;
-    box-shadow:  1px 1px 17px -7px #000000;
+    box-shadow: 1px 1px 17px -7px #000000;
+}
+
+.d-sm-block {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 320px) {
+
+    .boxshadow,
+    .card,
+    .card-colored,
+    .numbersItem {
+        margin-bottom: 20px !important;
+    }
+
+
+    .ml-90,
+    .ml-285 {
+        margin-left: 50px !important;
+    }
+
+
+    .l-90,
+    .l-285 {
+        left: 50px;
+    }
+
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
 }

@@ -12,7 +12,7 @@
     text-align: center;
     border-radius: 3px;
 }
-.Confirmed{
+.Active{
     background-color: rgb(26, 185, 29);
 }
 .Invalid{
@@ -35,4 +35,9 @@
 }
 .humoTable tr td, tr th{
     cursor: pointer;
+}
+@media (max-width:992px) {
+    .humoTable{
+        overflow-x: scroll !important;
+    }
 }

@@ -1,3 +1,8 @@
 .homepage{
     padding: 50px 20px;
 }
+@media (max-width:992px) {
+    .homepage{
+        padding: 50px 0 !important;
+    }
+}

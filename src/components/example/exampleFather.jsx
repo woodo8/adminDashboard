@@ -1,21 +1,26 @@
-import React from 'react'
+import React, { useRef } from "react";
 import jsPDF from 'jspdf'
 import './example.css'
 
 export default function ExampleFather() {
-
+    const pdfFile = useRef();
     const generatePDF = () => {
-        var doc = new jsPDF("p", "pt", "a4")
-        doc.html(document.querySelector("#content"),{
-            callback: function(pdf){
-                pdf.save("transacrion.pdf")
-            }
-        })
+        try {
+            var doc = new jsPDF("p", "pt", "a4")
+            doc.html(pdfFile.current, {
+                callback: function (pdf) {
+                    pdf.save("transaction.pdf")
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
+        console.log(pdfFile.current)
     }
 
     return (
         <div className='example'>
-            <div id="content">
+            <div ref={pdfFile} id="contenttttttt">
                 <p>
                     Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Tempora hic

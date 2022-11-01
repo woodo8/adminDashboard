@@ -1,6 +1,8 @@
 .humoinside{
     padding: 110px 10px;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 .row-layout{
     --bs-gutter-x:0 !important;
@@ -39,4 +41,8 @@
     border: none;
     outline: none;
     font-weight: 700;
+}
+.zindexx-0{
+    position: absolute;
+    z-index: -1;
 }

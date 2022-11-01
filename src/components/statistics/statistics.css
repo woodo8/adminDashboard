@@ -6,6 +6,10 @@
     display: none !important;
 }
 
+.statistics{
+    margin-top: 80px;
+}
+
 .areachart .p-0 {
 
     padding: 0 !important;
@@ -101,4 +105,78 @@
 }
 .statistics .css-19kzrtu{
     padding: 0;
+}
+
+
+.statistics .numbers .numbersIcon {
+    font-size: 50px !important;
+    margin-right: 25px;
+}
+.statistics .numbers .numbersItem:first-child .numbersIcon{
+    color: rgb(201, 39, 39) !important;
+
+}
+.statistics .numbers .numbersItem:nth-child(2) .numbersIcon{
+    color: rgb(111, 14, 111) !important;
+}
+.statistics .numbers .numbersItem:nth-child(3) .numbersIcon{
+    color: rgb(20, 68, 211) !important;
+}
+.statistics .numbers .numbersItem:nth-child(4) .numbersIcon{
+    color: rgb(231, 194, 32) !important;
+}
+.statistics .numbers .numbersText{
+    font-weight: 700;
+    color: rgb(166, 162, 162);
+    font-size: 14px;
+}
+.statistics .card-colored{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.statistics .card-colored-item:nth-child(1) .card-colored{
+    background-color: #7366ff !important;
+}
+.statistics .card-colored-item:nth-child(2) .card-colored{
+    background-color: #f73164!important;
+}
+.statistics .card-colored-item:nth-child(3) .card-colored{
+    background-color: #7366ff !important;
+}
+.statistics .card-colored-item:nth-child(4) .card-colored{
+    background-color: #f73164!important;
+}
+.statistics .card-colored .left-svg{
+    font-size: 80px;
+    margin-right: 25px;
+    display: block !important;
+}
+.statistics .card-colored .right-svg{
+    font-size: 160px;
+    display: block !important;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+    right: -30px;
+    transition: all 0.2s linear;
+}
+.statistics .card-colored:hover .right-svg{
+    scale: 1.2;
+    rotate: -15deg;
+}
+
+@media (max-width:992px) {
+    .statistics{
+        padding: 0 !important;
+    }
+    .statistics .card-colored .left-svg{
+        font-size: 60px;
+        margin-right: 25px;
+        display: block !important;
+    }
+    .MuiTabs-scroller{
+        overflow-x: scroll !important;
+    }
 }

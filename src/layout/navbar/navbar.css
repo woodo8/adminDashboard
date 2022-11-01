@@ -138,3 +138,11 @@
     height: 30px;
     z-index: 999;
 }
+@media (max-width:992px) {
+    .search-box{
+        display: none !important;
+    }
+    .navbar .profile-box img{
+        margin-right: 0 !important;
+    }
+}

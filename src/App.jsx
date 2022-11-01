@@ -16,16 +16,19 @@ import axios from "./apis/api";
 function App() {
   const [navStretch, setnavStretch] = useState(false);
   const [navDominant, setnavDominant] = useState(false);
+  const [getToggle, setGetToggle] = useState(false)
+
   return (
     <div className="App">
       <StateContext.Provider
-        value={{ navStretch, setnavStretch, navDominant, setnavDominant }}
+        value={{ navStretch, setnavStretch, navDominant, setnavDominant, getToggle, setGetToggle }}
       >
         <BrowserRouter>
           <Sidebar />
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/adminDashboard" element={<Homepage />} />
             <Route path="/uzcard" element={<Uzcard />} />
             <Route path="/pdf" element={<ExampleFather />} />
             <Route path="/humo" element={<HumoCard />} />
