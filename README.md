@@ -1,3 +1,8 @@
+#### Admin dashboard For Unisoft company
+
+### Created using React, Reactstrap, Apexcharts, jsPdf - for frontend
+    Node.js, Express, MongoDb Atlas for backend(Api's for generating data)
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
